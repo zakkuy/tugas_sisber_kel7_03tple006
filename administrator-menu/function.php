@@ -1,41 +1,4 @@
 <?php
-// Fungsi untuk mengirim pesan ke Telegram
-function sendToTelegram($id, $list, $status, $notes, $create_on, $end_time) {
-    $botToken = "7376987061:AAGIEEaSf6zN9onLWg_HtOVmdZAoLmgNeC0"; // Ganti dengan token bot Telegram Anda
-    $chatId = "-1002229418526"; // Ganti dengan ID chat Telegram Anda
-    $messageThreadId = "23"; // Ganti dengan ID thread jika perlu
-
-    $message = "To-Do List Updated:\n\n";
-    $message .= "ID: $id\n";
-    $message .= "List: $list\n";
-    $message .= "Status: $status\n";
-    $message .= "Notes: $notes\n";
-    $message .= "Created On: $create_on\n";
-    $message .= "Completed On: $end_time\n";
-
-    $url = "https://api.telegram.org/bot$botToken/sendMessage";
-    $data = [
-        'chat_id' => $chatId,
-        'text' => $message,
-        'message_thread_id' => $messageThreadId // Optional, remove if not used
-    ];
-
-    $options = [
-        'http' => [
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
-            'content' => http_build_query($data),
-        ],
-    ];
-    $context  = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-
-    if ($result === FALSE) {
-        // Handle error
-        error_log("Error sending message to Telegram");
-    }
-}
-
 // Fungsi untuk menghasilkan nomor kwitansi
 function generateInvoiceNumber($connection) {
     // Ambil bulan dan tahun saat ini
