@@ -1,6 +1,5 @@
-++++++++++++++++++++++++++++++++++++++++++++
-+ Kelompok 7 Sistem Berkas Kelas 03TPLE006 +
-++++++++++++++++++++++++++++++++++++++++++++
+Kelompok 7 Sistem Berkas Kelas 03TPLE006 
+
 
 Nama Anggota
 
@@ -10,15 +9,13 @@ Nama Anggota
 4. Aryani Cheryl Sanjana - 231011400301
 5. Christian Nathanael Rajagukguk - 231011403561
 
-====================================================================================================================
-
 Link NexLit Production 
+
 Login Pelanggan :
 https://nexlit.iynsn.site/
+
 Login Administator :
 https://nexlit.iynsn.site/d5d10c898b50ab6c8c2406ee318952e8d354fd2041f06fcc1755d0e90224eca8.php
-
-=====================================================================================================================
 
 Link Mockup Figma :
 https://www.figma.com/proto/SQq6XcDpAB78y6MmV0QRZT/NEXLIT-DESIGN-MOCKUP-BY-ZAKY?node-id=0-1&t=1638lAEE4qDwUPR6-1
